@@ -1,0 +1,30 @@
+@import 'helpers/variables';
+@import 'helpers/components';
+@import 'pages/index';
+@import 'layout/header';
+@import 'layout/footer';
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $fonts;
+  scroll-behavior: smooth;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+  font-size: 1rem;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+
+  .wrapper {
+    width: 90vw;
+    margin: auto;
+  }
+}
