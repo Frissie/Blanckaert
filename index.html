@@ -15,14 +15,14 @@
       <nav>
         <li><a href="#home" class="active">home</a></li>
         <li><a href="#info">info</a></li>
-        <li><a href="#price">price</a></li>
-        <li><a href="#contacts">contact</a></li>
+        <li class="inactive"><a href="#price">price</a></li>
+        <li><a href="#contacts">contacts</a></li>
       </nav>
     </header>
     <section id="home">
       <div>
         <img src="assets/LB_Logo.gif" alt="">
-        <div id="name">luc blanckaert</div>
+        <h1 id="name">luc blanckaert</h1>
       </div>
       <ul>
         <li>fotograaf</li>
@@ -36,17 +36,40 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga provident natus magni? Corrupti doloremque harum dolores eos maiores. Eaque facere ipsam ipsa necessitatibus reiciendis cumque voluptatibus. Delectus, repellat sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br><br>Quo libero, ipsam cum obcaecati nemo tempore repellat, blanditiis sed magni ut iusto voluptas dolorum sit odio labore molestias ipsum perspiciatis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa eaque saepe recusandae quam. Nulla ratione quia dolorum magni, at reiciendis assumenda facilis facere qui placeat est inventore id a. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quas hic distinctio nihil, veritatis expedita beatae officia impedit inventore labore quibusdam. Neque aperiam odit sit fugiat magni quidem velit minima.</p>
       </div>
     </section>
-    <section id="price">
-      <div>
+    <section id="price" class="inactive">
+      <div class="inactive">
         <h2>Prijzen</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga provident natus magni? Corrupti doloremque harum dolores eos maiores. Eaque facere ipsam ipsa necessitatibus reiciendis cumque voluptatibus. Delectus, repellat sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br><br>Quo libero, ipsam cum obcaecati nemo tempore repellat, blanditiis sed magni ut iusto voluptas dolorum sit odio labore molestias ipsum perspiciatis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa eaque saepe recusandae quam. Nulla ratione quia dolorum magni, at reiciendis assumenda facilis facere qui placeat est inventore id a. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quas hic distinctio nihil, veritatis expedita beatae officia impedit inventore labore quibusdam. Neque aperiam odit sit fugiat magni quidem velit minima.</p>
       </div>
     </section>
-    <footer id="contacts">
-        <div>Luc Blanckaert</div>
-        <div>GSM: +32 473 99 08 12</div>
-        <div>Email: L.Blanckaert@outlook.com</div>
-    </footer>
+    <section id="contacts">
+      <form action="https://formspree.io/f/mrgjnaoe" method="POST">
+        <div id="message">
+          <label>Your message:</label>
+          <textarea name="message" placeholder="Waarmee kunnen wij je helpen?"></textarea>
+        </div id="send">
+        <div>
+          <div id="fullname">
+            <label for="full-name">Full Name:</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          </div>
+          <div id="email">
+            <label>Your email:</label>
+            <input type="email" name="email" placeholder="email@domain.tld" required>
+          </div>
+          <!-- your other form fields go here -->
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </div>
+      </form>
+      <footer id="footer">
+        <h4 class="left">Luc Blanckaert</h4>
+        <h4 class="right">GSM: +32 473 99 08 12</h4>
+        <h4 class="left">Email: L.Blanckaert@outlook.com</h4>
+        <h4 class="right">BTW: 	<a href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?nummer=0788379376&actionLu=Zoek" target="_blank">0788.379.376</a></h4>
+      </footer>
+    </section>
   </div>
 </body>
 </html>

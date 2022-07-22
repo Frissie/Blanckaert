@@ -1,0 +1,16 @@
+%page {
+  height: 100vh;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+}
+
+ @mixin float($side, $pos: relative) {
+  position: $pos;
+  clear: $side;
+  float: $side;
+  
+ }
