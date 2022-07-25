@@ -14,8 +14,12 @@
 
     a {
       font-size: 1.5rem;
-      text-decoration: none;
+      text-decoration: underline;
       color: $bg-color;
+      &:hover {
+        color: lighten($color: #000000, $amount: 50%);
+        text-decoration: none;
+      }
     }
   }
 }

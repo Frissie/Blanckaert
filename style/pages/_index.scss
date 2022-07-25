@@ -40,11 +40,12 @@
 
 #info {
   @extend %page;
+  color: $bg-color;
 }
 
-#price {
-  //@extend %page;
-  display: none
+#photo {
+  @extend %page;
+  color: $bg-color;
 }
 
 #contacts {

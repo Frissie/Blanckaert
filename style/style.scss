@@ -1,8 +1,11 @@
+@import 'items/carousel';
+
 @import 'helpers/variables';
 @import 'helpers/components';
 @import 'helpers/animation';
+
 @import 'pages/index';
-@import 'pages/photo';
+
 @import 'layout/header';
 @import 'layout/footer';
 
@@ -18,6 +21,7 @@ html {
   box-sizing: inherit;
   font-size: 1rem;
   font-family: inherit;
+  color: inherit;
   margin: 0;
   padding: 0;
 }
@@ -31,6 +35,12 @@ body {
   }
 }
 
-.inactive {
-  display: none;
+li {
+  list-style: none;
+  
 }
+
+a {
+  text-decoration: none;
+}
+
