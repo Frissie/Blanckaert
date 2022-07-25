@@ -4,6 +4,9 @@ header {
   top: 10%;
   right: 5%;
   z-index: 5;
+  animation-name: slide-in;
+  animation-duration: 5s;
+  
 
   nav {
         display: flex;

@@ -8,8 +8,61 @@
   max-width: 60%;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in {
+  0% {
+    right: -40%;
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    right: 5%;
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  0% {
+    right: -40%;
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    right: 5%;
+    opacity: 1;
+  }
+}
 #home {
   flex-flow: column;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 #home div {
   display: flex;
@@ -94,6 +147,10 @@ header {
   top: 10%;
   right: 5%;
   z-index: 5;
+  -webkit-animation-name: slide-in;
+          animation-name: slide-in;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 header nav {
   display: flex;

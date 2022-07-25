@@ -1,6 +1,9 @@
 #home {
   @extend %page;
   flex-flow: column;
+  animation-name: appear;
+  animation-duration: 5s;
+  
 
   div { 
     display: flex;
