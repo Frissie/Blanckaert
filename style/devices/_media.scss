@@ -1,0 +1,116 @@
+@media screen and (orientation: portrait){
+  header {
+    width: 100vw;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    animation-name: slide-in-top;
+
+    nav {
+
+      li {
+        font-size: 4vw;
+        &.active {
+          box-shadow: 5px 5px 10px black;
+        }
+      }
+
+    }
+  }
+
+  body {
+    .wrapper {
+      .fader-bottom {
+        height: 10vh;
+      }
+    }
+  }
+
+  #home {
+    max-width: 80%;
+
+    div {
+      justify-content: center;
+      flex-flow: column;
+
+      img {
+        max-width: 40%;
+        margin-bottom: 5%;
+        box-shadow: 5px 5px 10px black;
+      }
+
+      #name {
+        font-size: 4vh;
+      }
+    }
+
+    ul {
+      li {
+        font-size: 1.5vh;
+      }
+    }
+  }
+
+  #info {
+    .uitleg {
+      .herstelling {
+        li {
+          font-size: 3vw;
+        }
+      }
+      .renovatie {
+        li {
+          font-size: 3vw;
+        }
+      }
+      .veiligheid {
+        li {
+          font-size: 3vw;
+        }
+      }
+      .fotografie {
+        li {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+
+  #contacts {
+    form {
+      flex-flow: column;
+      height: 50vh;
+  
+      div {
+        width: 100%;
+        &#message {
+          height: 60%;
+          width: 100%;
+  
+          textarea {
+            min-height: 80%;
+            max-height: 80%;
+          }
+        }
+  
+        div {
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  #footer {
+    h4{
+      font-size: 1rem;
+      &.right {
+        @include float(left);
+      }
+  
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+#photo {
+  max-width: 80%;
+  @extend %page;
+  color: $bg-color;
+    
+  .pictures {
+    background: #000;
+    height: 70%;
+    width: 90%;
+
+    .slideshow-container {
+      position: relative;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      background-color: #000;
+
+
+      .mySlides{
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column wrap;
+        width: 100%;
+        display: none;
+        
+        img {
+          object-fit: cover;
+          border: 1px solid black;
+        }
+
+        &.active {
+          display: flex;
+        }
+      }
+      
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: rgba($color: #fff, $alpha: 0.2);
+
+        &:hover {
+          background-color: rgba($color: #fff, $alpha: 0.5);
+        }
+      }
+
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+    }
+  }
+}

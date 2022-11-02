@@ -1,11 +1,10 @@
-%page {
+ %page {
   height: 100vh;
-  position: relative;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 60%;
+  scroll-snap-align: center;
 }
 
  @mixin float($side, $pos: relative) {
@@ -14,3 +13,7 @@
   float: $side;
   
  }
+
+ %clip {
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}

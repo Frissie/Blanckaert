@@ -10,49 +10,133 @@
   
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" >
+    <div class="fader-top"></div>
+    <div class="fader-bottom"></div>
     <header>
       <nav>
-        <li><a href="#home" class="active">home</a></li>
-        <li><a href="#info">info</a></li>
-        <li class="inactive"><a href="#price">price</a></li>
-        <li><a href="#contacts">contacts</a></li>
+        <li class="active" onclick="move('home')">home</li>
+        <li onclick="move('info')">info</li>
+        <li onclick="move('photo')">photo</li>
+        <li onclick="move('contacts')">contacts</li>
       </nav>
     </header>
+      
     <section id="home">
+
       <div>
-        <img src="assets/LB_Logo.gif" alt="">
+        <img src="assets/LB_Logo.gif" alt="LB-logo">
         <h1 id="name">luc blanckaert</h1>
       </div>
+
       <ul>
         <li>fotograaf</li>
         <li>vakman</li>
         <li>veiligheidsexpert</li>
       </ul>
+      
     </section>
+
     <section id="info">
-      <div>
-        <h2>info</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga provident natus magni? Corrupti doloremque harum dolores eos maiores. Eaque facere ipsam ipsa necessitatibus reiciendis cumque voluptatibus. Delectus, repellat sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br><br>Quo libero, ipsam cum obcaecati nemo tempore repellat, blanditiis sed magni ut iusto voluptas dolorum sit odio labore molestias ipsum perspiciatis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa eaque saepe recusandae quam. Nulla ratione quia dolorum magni, at reiciendis assumenda facilis facere qui placeat est inventore id a. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quas hic distinctio nihil, veritatis expedita beatae officia impedit inventore labore quibusdam. Neque aperiam odit sit fugiat magni quidem velit minima.</p>
+      
+      <ul class="verdeling">
+          <li class="herstelling active" onclick="info('herstelling')"><span>Karwei en Herstellingen:</span></li>
+          <li class="renovatie" onclick="info('renovatie')"><span>Renovatie & schilder- <br> en behangwerken:</span></li>
+          <li class="veiligheid" onclick="info('veiligheid')"><span>Veiligheid:</span></li>
+          <li class="fotografie" onclick="info('fotografie')"><span>Fotografie:</span></li>
+      </ul>
+      
+      <div class="uitleg">
+
+        <ul class="herstelling active">
+          <li>Plaatsen en herstellen van vloer- en wandtegels</li>
+          <li>Plaatsen van kliklaminaat en vinyl</li>
+          <li>Plaatsen en herstellen van plinten</li>
+          <li>Kleine sanitaire herstellingen zoals het monteren van keukenkraan,<br> bad- of douchekraan, toilet, spoelbak, ..</li>
+          <li>Herstellen van meubilair en afregelen deurkasten</li>
+          <li>Het in elkaar zetten en/of verplaatsen van kasten</li>
+          <li>Herstellen of vervangen van schakelaar en stopcontact</li>
+          <li>Verplaatsen van schakelaar en stopcontact</li>
+          <li>Vervangen lampen, monteren lichtarmaturen</li>
+          <li>Plaatsen van gordijnen en rolgordijnen</li>
+          <li>Herstel deurkruk, deurslot</li>
+          <li>Plaatsen van sleutelkastje</li>
+          <li>Plaatsen van rookmelders</li>
+        </ul>
+
+        <ul class="renovatie">
+          <li>Verwijderen van oud behangpapier</li>
+          <li>Kleine herstel van pleister- en plamuurwerk</li>
+          <li>Behangwerk: door u gekozen behangpapier</li>
+          <li>Binnenschilderwerk (woonkamer, keuken, slaapkamers)</li>
+        </ul>
+
+        <ul class="veiligheid">
+          <li>Installatie van persoonlijk alarmsysteem</li>
+          <li>Veiligheidsanalyse.</li>
+        </ul>
+
+        <ul class="fotografie">
+          <li>Fotoshoot vanaf 1 uur</li>
+          <li>Portret voor portfolio</li>
+          <li>Individuele portretten en groepsportretten op locatie. Dit kan van je verjaardagfeestje, receptie,….</li>
+          <li>Verwerken van jullie eigen foto’s</li>
+          <li>Verwerken van negatieven naar elektronische foto’s.</li>
+          <li>Printen van foto’s 10x15, A4, A.3 en 3A+</li>
+        </ul>
+
       </div>
+
     </section>
-    <section id="price" class="inactive">
-      <div class="inactive">
-        <h2>Prijzen</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae fuga provident natus magni? Corrupti doloremque harum dolores eos maiores. Eaque facere ipsam ipsa necessitatibus reiciendis cumque voluptatibus. Delectus, repellat sunt. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br><br>Quo libero, ipsam cum obcaecati nemo tempore repellat, blanditiis sed magni ut iusto voluptas dolorum sit odio labore molestias ipsum perspiciatis voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ipsa eaque saepe recusandae quam. Nulla ratione quia dolorum magni, at reiciendis assumenda facilis facere qui placeat est inventore id a. <br><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, quas hic distinctio nihil, veritatis expedita beatae officia impedit inventore labore quibusdam. Neque aperiam odit sit fugiat magni quidem velit minima.</p>
-      </div>
+
+    <section id="photo">
+      
+      <div class="pictures">
+        
+        <div class="slideshow-container">
+          
+          <div class="mySlides active">
+            <img src="assets/images/large/boat_water_1.jpg" style="height: 100%;width: 30%;">
+            <img src="assets/images/large/boat_water_2.jpg" style="height: 33%;width: 40%;">
+            <img src="assets/images/large/boat_dry_2.jpg" style="height: 34%;width: 40%;">
+            <img src="assets/images/large/boat_dry_3.jpg" style="height: 33%;width: 40%;">
+            <img src="assets/images/large/boat_repaired_1.jpg" style="height: 100%;width: 30%; object-position: right;">
+          </div>
+
+          <div class="mySlides ">
+            <img src="assets/images/large/Electrical_1.jpg" style="height: 100%;width: 30%;">
+            <img src="assets/images/large/Electrical_2.jpg" style="height: 100%;width: 40%;">
+            <img src="assets/images/large/Electrical_3.jpg" style="height: 100%;width: 30%; ">
+          </div>
+
+          <div class="mySlides ">
+            <img src="assets/images/large/Living.jpg" style="height: 100%;width: 100%;">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+          
+      </div>         
     </section>
+
     <section id="contacts">
+
       <form action="https://formspree.io/f/mrgjnaoe" method="POST">
+
         <div id="message">
           <label>Your message:</label>
           <textarea name="message" placeholder="Waarmee kunnen wij je helpen?"></textarea>
         </div id="send">
+
         <div>
+
           <div id="fullname">
             <label for="full-name">Full Name:</label>
             <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
           </div>
+
           <div id="email">
             <label>Your email:</label>
             <input type="email" name="email" placeholder="email@domain.tld" required>
@@ -61,15 +145,23 @@
           <div>
             <button type="submit">Send</button>
           </div>
+
         </div>
+
       </form>
+
       <footer id="footer">
         <h4 class="left">Luc Blanckaert</h4>
-        <h4 class="right">GSM: +32 473 99 08 12</h4>
-        <h4 class="left">Email: L.Blanckaert@outlook.com</h4>
+        <h4 class="right">GSM: <a href="tel:+32473990812">+32 473 99 08 12</a></h4>
+        <h4 class="left"><a href="mailto:L.Blanckaert@outlook.com">L.Blanckaert@outlook.com</a></h4>
         <h4 class="right">BTW: 	<a href="https://kbopub.economie.fgov.be/kbopub/zoeknummerform.html?nummer=0788379376&actionLu=Zoek" target="_blank">0788.379.376</a></h4>
       </footer>
+
     </section>
+
   </div>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
